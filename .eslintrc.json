@@ -1,0 +1,36 @@
+{
+	"plugins": ["@typescript-eslint"],
+	"parser": "@typescript-eslint/parser",
+	"overrides": [
+		{
+			"files":  ["*.{ts,tsx}"],
+			"rules": {
+				"@typescript-eslint/typedef": ["error", {
+					"propertyDeclaration": true,
+					"arrowParameter": false
+				}],
+				"@typescript-eslint/explicit-function-return-type": ["error", {
+					"allowTypedFunctionExpressions": true,
+					"allowExpressions": true
+				}],
+				"no-console": "off",
+				"indent": ["warn", "tab"],
+				"semi-style": ["error", "last"],
+				"semi": ["error", "always"],
+				"linebreak-style": ["warn", "unix"],
+				"no-unused-vars": "off",
+  			"@typescript-eslint/no-unused-vars": ["warn", { "args": "none" }]
+			}
+		},
+		{
+			"files":  ["*.{js,jsx}"],
+			"rules": {
+				"indent": ["warn", "tab"],
+				"semi-style": ["error", "last"],
+				"semi": ["error", "always"],
+				"linebreak-style": ["warn", "unix"],
+				"no-unused-vars": "warn"
+			}
+		}
+	]
+}
