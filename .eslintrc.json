@@ -14,7 +14,7 @@
 					"allowExpressions": true
 				}],
 				"no-console": "off",
-				"indent": ["warn", "tab"],
+				"indent": ["warn", "space"],
 				"semi-style": ["error", "last"],
 				"semi": ["error", "always"],
 				"linebreak-style": ["warn", "unix"],
@@ -25,7 +25,7 @@
 		{
 			"files":  ["*.{js,jsx}"],
 			"rules": {
-				"indent": ["warn", "tab"],
+				"indent": ["warn", "space"],
 				"semi-style": ["error", "last"],
 				"semi": ["error", "always"],
 				"linebreak-style": ["warn", "unix"],

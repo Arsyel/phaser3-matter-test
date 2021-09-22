@@ -23,7 +23,7 @@ const calculateScreen = (): CalculateScreenType => {
 	let isLandscape = targetWidth > targetHeight;
 
 	if (isLandscape) {
-		actualWidth = actualHeight * (3 / 4);
+		actualWidth = actualHeight * (9 / 16);
 	}
 
 	// Modulo 2 to prevent bleeding tile
@@ -55,7 +55,7 @@ const screenProfile = calculateScreen();
 const isFirefox = /Firefox/i.test(navigator.userAgent);
 
 // Set to WebGL in Firefox, using Canvas in Firefox somehow create performance / lagging issues
-const renderType = isFirefox ? Phaser.WEBGL : Phaser.AUTO;
+const renderType = isFirefox ? Phaser.WEBGL : Phaser.CANVAS;
 
 const gameConfig: Phaser.Types.Core.GameConfig = {
 	version: CONFIG.VERSION,
@@ -77,6 +77,8 @@ const gameConfig: Phaser.Types.Core.GameConfig = {
 		matter: {
 			gravity: { y: 1 },
 			debug: true,
+			correction: 2,
+			positionIterations: 7,
 		},
 	},
 	input: { activePointers: 3 },

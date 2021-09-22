@@ -27,6 +27,11 @@ export const Assets = {
 		url: 'img/ball/emoji_4.png',
 		type: AssetType.STATIC
 	},
+	ball_bomb_a: {
+		key: 'img_ball_bomb_a',
+		url: 'img/ball/img_ball_bomb_a.png',
+		type: AssetType.STATIC
+	},
 	ball_holder: {
 		key: 'img_ball_holder',
 		url: 'img/platform/ball_holder.png',
@@ -42,6 +47,7 @@ export const Assets = {
 		url: 'img/platform/holder.png',
 		type: AssetType.STATIC
 	},
+
 	json_holder: {
 		key: 'json_holder',
 		url: 'img/platform/holder.json',

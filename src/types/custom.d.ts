@@ -18,6 +18,8 @@ export declare namespace CustomTypes {
             value: V
         }
 
+        type FunctionWithParams = (...args: unknown[]) => void
+
     }
 
     namespace Asset {

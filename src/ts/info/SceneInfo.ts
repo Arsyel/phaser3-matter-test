@@ -17,5 +17,9 @@ export const SceneInfo = {
 	},
 };
 
+export const LAYER_DEPTH = {
+	UI: 100,
+};
+
 export function SceneList(): Function[]
 { return Object.values(SceneInfo).map((info) => info.scene); }
